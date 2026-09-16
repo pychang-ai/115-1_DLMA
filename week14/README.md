@@ -1,23 +1,22 @@
-# 第 14 週｜生成模型：VAE 與 GAN（2026/12/11）
+# 第 14 週｜遷移學習與生成模型（VAE）（2026/12/11）
 
-- 對應教科書：CH10 Variational Auto-Encoder＋CH11 Generative Adversarial Network
+- 對應教科書：CH09 遷移學習＋CH10 Variational Auto-Encoder
 - 教學內容：
+  - 9-1 遷移學習 Transfer Learning、9-2 實驗：cats_vs_dogs
   - 10-1／10-2 Auto-Encoder 與 VAE、10-3 重建損失與 KL 散度
-  - 11-1／11-2 GAN → WGAN → WGAN-GP 的演進與梯度懲罰
-  - 10-4 實驗：TF2-VAE 以 MNIST 訓練
 
 ## 隨堂作業
 
-作業W14：用 TF2-VAE 對 MNIST 訓練 5 epochs，交重建圖與潛在空間 2D 圖
+作業W14：用預訓練模型對自備的 3 張海事影像做預測，列出 Top-3 類別並解讀
 
 - 第 3 節自由練習時完成，貼到當週 Canva 答題卡自己學號末兩碼的卡片，下課前完成
 
 ## 作業W14 學習單（1 題）
 
-**題目**：clone 課本 Lab10 的 TF2-VAE 專案（<https://github.com/KUASWoodyLIN/TF2-VAE>），在 Colab 以 MNIST 訓練 **5 epochs**，產出重建圖與潛在空間 2D 分布圖。並用一段話說明重建損失與 KL 損失各自的作用。
+**題目**：用 `keras.applications` 載入 EfficientNetB0（ImageNet 預訓練權重），對你**自己拍或找的 3 張海事影像**（船、港口、燈塔等）做預測，各列出 Top-3 類別與信心值。
 
-**資料**：tfds 內建 mnist（自動下載約 11 MB）。
+**資料**：自備 3 張海事影像（自行拍攝或公開圖片，需註明來源）。
 
-**繳交物**：兩張圖（重建結果、潛在空間 2D）＋說明段落。
+**繳交物**：Colab 截圖：3 張影像與各自的 Top-3 預測結果，加一句話說明預測合不合理。
 
-**評分要點（Pass／Fail）**：兩張圖都有；說明有分別講到重建損失與 KL 損失。
+**評分要點（Pass／Fail）**：3 張都是海事主題；Top-3 有列出；有對「合不合理」做解讀。
