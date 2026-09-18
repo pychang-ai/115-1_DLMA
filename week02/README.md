@@ -21,3 +21,7 @@
 **繳交物**：Colab 程式碼與完整輸出截圖（看得到 12 個 batch）。
 
 **評分要點（Pass／Fail）**：batch 大小 16、重複 3 次；輸出 12 個 batch 且數值連續正確。
+
+## 本週 Colab
+
+- [Lab1.ipynb — TensorFlow 2 介紹：本週作業的 tf.data 在最後一節](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab1.ipynb)　←　點開即用

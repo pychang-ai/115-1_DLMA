@@ -21,3 +21,7 @@
 **繳交物**：Colab 截圖：兩個模型的訓練曲線或最終準確率，加一句話解讀 BN 的作用。
 
 **評分要點（Pass／Fail）**：兩個模型只差在 BN；有數字比較；解讀有依據不是空話。
+
+## 本週 Colab
+
+- [Lab5.ipynb — 訓練技巧：權重初始化與 Batch Normalization](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab5.ipynb)　←　點開即用

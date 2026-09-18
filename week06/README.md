@@ -21,3 +21,8 @@
 **繳交物**：Colab 截圖：set_seed 那一行、10 epochs 訓練記錄、兩列比較表（全連接 vs CNN 的準確率）。
 
 **評分要點（Pass／Fail）**：seed 正確；CNN 有訓練完 10 epochs；有做兩種模型的數字比較。
+
+## 本週 Colab
+
+- [Lab3.ipynb — 二元分類：精靈寶可夢對戰預測](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab3.ipynb)　←　點開即用
+- [Lab4.ipynb — 多類別分類：CIFAR-10 與影像增強](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab4.ipynb)　←　點開即用

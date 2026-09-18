@@ -22,6 +22,10 @@
 
 **評分要點（Pass／Fail）**：Lab1 每格皆有輸出無錯誤；GPU 偵測有回傳裝置（非空清單）。
 
+## 本週 Colab
+
+- [Lab1.ipynb — TensorFlow 2 介紹：Eager Execution、Keras、tf.data](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab1.ipynb)　←　點開即用
+
 ## 註解：本週補做作業W01
 
 第 1 週作業 W01 於本週一併完成，題目見 [week01/README.md](../week01/README.md)。

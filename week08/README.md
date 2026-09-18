@@ -23,6 +23,10 @@
 
 **評分要點（Pass／Fail）**：有繼承 Metric 並實作 update_state／result；訓練記錄看得到該指標數值。
 
+## 本週 Colab
+
+- [Lab6.ipynb — 進階技巧：Custom Layer／Loss／Metric／Callback](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab6.ipynb)　←　點開即用
+
 ## 註解：小考 1（CH00–CH06）；期中提案說明
 
 見 [quizzes/README.md](../quizzes/README.md)。

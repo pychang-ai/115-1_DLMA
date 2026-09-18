@@ -22,6 +22,11 @@
 
 **評分要點（Pass／Fail）**：確實跑滿 12 組；面板有出來；有指出最佳組合與數字。
 
+## 本週 Colab
+
+- [Lab7.ipynb — TensorBoard 進階：tf.summary 與 HParams](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7.ipynb)　←　點開即用
+- [Lab8.ipynb — 經典架構：InceptionV3／EfficientNet](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab8.ipynb)　←　點開即用
+
 ## 註解：期中餐點分享
 
 課程照常進行。

@@ -20,3 +20,8 @@
 **繳交物**：Colab 截圖：3 張影像與各自的 Top-3 預測結果，加一句話說明預測合不合理。
 
 **評分要點（Pass／Fail）**：3 張都是海事主題；Top-3 有列出；有對「合不合理」做解讀。
+
+## 本週 Colab
+
+- [Lab9.ipynb — 遷移學習：cats_vs_dogs](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab9.ipynb)　←　點開即用
+- **Lab10（VAE）是資料夾專案，不能一鍵開啟**，請在 Colab 新筆記本第一格執行：`!git clone https://github.com/KUASWoodyLIN/TF2-VAE`，再依該資料夾的 README 執行。

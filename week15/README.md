@@ -22,6 +22,11 @@
 
 **評分要點（Pass／Fail）**：至少 3 張有框出結果；侷限說明有具體指出（例如小船漏偵、類別不夠細）。
 
+## 本週 Colab
+
+- **Lab11（WGAN-GP）是資料夾專案，不能一鍵開啟**，請在 Colab 新筆記本第一格執行：`!git clone https://github.com/KUASWoodyLIN/TF2-WGAN`，再依該資料夾的 README 執行。
+- **Lab12（YOLO v3）是資料夾專案，不能一鍵開啟**，請在 Colab 新筆記本第一格執行：`!git clone https://github.com/KUASWoodyLIN/TF2-Yolo3`，再依該資料夾的 README 執行。
+
 ## 註解：小考 2（CH07–CH12）
 
 見 [quizzes/README.md](../quizzes/README.md)。

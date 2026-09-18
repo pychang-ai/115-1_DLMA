@@ -21,3 +21,7 @@
 **繳交物**：Colab 截圖：看得到 set_seed 那一行、訓練曲線、測試集誤差百分比數字。
 
 **評分要點（Pass／Fail）**：seed 是自己的學號末兩碼；有算出誤差百分比；三層 DNN 結構正確。
+
+## 本週 Colab
+
+- [Lab2.ipynb — 迴歸問題：房價預測與過擬合](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab2.ipynb)　←　點開即用
