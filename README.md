@@ -265,8 +265,8 @@
 
 | 主題 | 內容 | 檔案 |
 |------|------|------|
-| **LLM 推論最佳化** | 訓練好的模型要怎麼跑得快、跑得起：兩階段推論、KV cache、批次策略、MHA/GQA/MQA、量化、推測解碼、平行化。七個手算例＋三支 NumPy 手寫程式 | [講義](topics/115-1_課外主題_LLM推論最佳化.md)｜[PDF](topics/115-1_課外主題_LLM推論最佳化.pdf)｜[簡報](topics/課外主題_LLM推論最佳化.pptx) |
-| **梯度下降法** | 補充教材《深度學習 2023_0601_R2》第 30 至 39 頁的程式版：更新式、手算六步、學習率太大為什麼發散、等高線與鋸齒。手寫 NumPy 版與 TensorFlow 2 框架版跑同一題，數字必須一致 | [講義](topics/115-1_課外主題_梯度下降法.md)｜[PDF](topics/115-1_課外主題_梯度下降法.pdf)｜[簡報](topics/課外主題_梯度下降法.pptx)｜[程式](topics/gradient_descent.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/gradient_descent.ipynb) |
+| **LLM 推論最佳化** | 訓練好的模型要怎麼跑得快、跑得起：兩階段推論、KV cache、批次策略、MHA/GQA/MQA、量化、推測解碼、平行化。七個手算例＋三支 NumPy 手寫程式 | [講義](topics/llm-inference/115-1_課外主題_LLM推論最佳化.md)｜[PDF](topics/llm-inference/115-1_課外主題_LLM推論最佳化.pdf)｜[簡報](topics/llm-inference/課外主題_LLM推論最佳化.pptx) |
+| **梯度下降法** | 補充教材《深度學習 2023_0601_R2》第 30 至 39 頁的程式版：更新式、手算六步、學習率太大為什麼發散、等高線與鋸齒。手寫 NumPy 版與 TensorFlow 2 框架版跑同一題，數字必須一致 | [講義](topics/gradient-descent/115-1_課外主題_梯度下降法.md)｜[PDF](topics/gradient-descent/115-1_課外主題_梯度下降法.pdf)｜[簡報](topics/gradient-descent/課外主題_梯度下降法.pptx)｜[程式](topics/gradient-descent/gradient_descent.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/gradient-descent/gradient_descent.ipynb) |
 
 ## 注意事項
 
