@@ -16,7 +16,7 @@
 
 **題目**：用老師提供的 `cifar10.npz` 載入 CIFAR-10（照 Lab4 離線版載入資料那一格），建一個 CNN（Conv2D＋MaxPool＋Flatten＋Dense）訓練 **10 epochs**，記錄驗證準確率，並與課本 Lab4 全連接版的結果做比較（可直接引用課本輸出）。程式開頭加 `tf.random.set_seed(學號末兩碼)`。
 
-**資料**：老師提供的 `cifar10.npz`（170 MB），在老師公布的課程 Dropbox「教材資源 → Dataset → CIFAR-10」，放法見 Lab4 離線版開頭的說明。不要用 tfds 線上下載，原站太慢會卡住。
+**資料**：老師提供下載的 `cifar10.npz`（170 MB）。下載後在 Colab 左側資料夾按「上傳」，放進 Colab 預設資料夾 `/content`，再執行 Lab4 離線版。不要用 tfds 線上下載，原站太慢會卡住。
 
 **繳交物**：Colab 截圖：set_seed 那一行、10 epochs 訓練記錄、兩列比較表（全連接 vs CNN 的準確率）。
 
@@ -25,5 +25,5 @@
 ## 本週 Colab
 
 - [Lab3.ipynb — 二元分類：精靈寶可夢對戰預測](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab3.ipynb)　←　點開即用
-- [Lab4_offline.ipynb — 多類別分類：CIFAR-10 與影像增強（離線版，讀老師提供的 cifar10.npz）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab4_offline.ipynb)　←　點開即用
+- [Lab4_offline_V2.ipynb — 多類別分類：CIFAR-10 與影像增強（離線版，先上傳老師提供的 cifar10.npz）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab4_offline_V2.ipynb)　←　點開即用
 - [Lab4.ipynb — 課本原版：資料要線上下載，原站很慢，上課請用上一行的離線版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab4.ipynb)　←　點開即用
