@@ -14,9 +14,9 @@
 
 ## 作業W07 學習單（1 題）
 
-**題目**：用 CIFAR-10 訓練兩個結構相同的 CNN，一個加 `BatchNormalization` 一個不加，各 **10 epochs**，比較兩者的驗證準確率與收斂速度。程式開頭加 `tf.random.set_seed(學號末兩碼)`。
+**題目**：用 CIFAR-10 訓練兩個結構相同的 CNN，一個加 `BatchNormalization` 一個不加，各 **10 epochs**，比較兩者的驗證準確率與收斂速度。在 Lab5 Colab 版「Colab 準備」那一格**之後**加 `tf.random.set_seed(學號末兩碼)`（放在它前面會被擋下，要重新啟動）。
 
-**資料**：tfds 內建 cifar10。
+**資料**：老師提供下載的 `cifar10.npz`（和第 6 週同一個檔）。上傳到 Colab 預設資料夾 `/content`，再執行 Lab5 Colab 版，用裡面的 `load_cifar10` 讀資料。不要用 tfds 線上下載，原站太慢會卡住。
 
 **繳交物**：Colab 截圖：兩個模型的訓練曲線或最終準確率，加一句話解讀 BN 的作用。
 
@@ -24,4 +24,5 @@
 
 ## 本週 Colab
 
-- [Lab5.ipynb — 訓練技巧：權重初始化與 Batch Normalization](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab5.ipynb)　←　點開即用
+- [Lab5_colab_V1.ipynb — 訓練技巧：權重初始化與 Batch Normalization（Colab 版，先上傳老師提供的 cifar10.npz）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab5_colab_V1.ipynb)　←　點開即用
+- [Lab5.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab5.ipynb)　←　點開即用

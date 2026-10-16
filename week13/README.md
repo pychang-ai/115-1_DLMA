@@ -16,7 +16,7 @@
 
 **題目**：用 TensorBoard 的 HParams 工具跑 **12 組**超參數組合（例如 units × dropout × optimizer），每組只訓練 **3 epochs**，在 HParams 面板比較，指出最佳組合。
 
-**資料**：CIFAR-10 或課本範例資料集。
+**資料**：CIFAR-10（老師提供的 `cifar10.npz`，在 Lab7 Colab 版裡用 `load_cifar10` 讀）或課本範例資料集。
 
 **繳交物**：HParams 面板截圖（看得到 12 列）＋一句話寫出最佳組合與其準確率。
 
@@ -24,8 +24,10 @@
 
 ## 本週 Colab
 
-- [Lab7.ipynb — TensorBoard 進階：tf.summary 與 HParams](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7.ipynb)　←　點開即用
-- [Lab8.ipynb — 經典架構：InceptionV3／EfficientNet](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab8.ipynb)　←　點開即用
+- [Lab7_colab_V1.ipynb — TensorBoard 進階：tf.summary 與 HParams（Colab 版，先上傳 cifar10.npz）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7_colab_V1.ipynb)　←　點開即用
+- [Lab7.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7.ipynb)　←　點開即用
+- [Lab8_colab_V1.ipynb — 經典架構：InceptionV3（Colab 版）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab8_colab_V1.ipynb)　←　點開即用
+- [Lab8.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab8.ipynb)　←　點開即用
 
 ## 註解：期中餐點分享
 

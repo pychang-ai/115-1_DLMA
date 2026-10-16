@@ -24,7 +24,8 @@
 
 ## 本週 Colab
 
-- **Lab11（WGAN-GP）是資料夾專案，不能一鍵開啟**，請在 Colab 新筆記本第一格執行：`!git clone https://github.com/KUASWoodyLIN/TF2-WGAN`，再依該資料夾的 README 執行。
+- [Lab11_colab_V1.ipynb — WGAN-GP（Colab 版，先上傳老師提供的 celeba_15k.zip）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab11_colab_V1.ipynb)　←　點開即用
+- Lab11 課本原版是資料夾專案 https://github.com/KUASWoodyLIN/TF2-WGAN，在現在的 Colab 會出錯，上課請用上一行的 Colab 版。
 - **Lab12（YOLO v3）是資料夾專案，不能一鍵開啟**，請在 Colab 新筆記本第一格執行：`!git clone https://github.com/KUASWoodyLIN/TF2-Yolo3`，再依該資料夾的 README 執行。
 
 ## 註解：小考 2（CH07–CH12）

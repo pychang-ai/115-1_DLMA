@@ -17,7 +17,7 @@
 
 **題目**：繼承 `tf.keras.metrics.Metric` 寫一個自訂指標 `CategoricalTruePositives`（計算正確分類的樣本數），加進 `model.compile(metrics=[...])`，訓練 3 epochs 讓它每個 epoch 都印出來。
 
-**資料**：CIFAR-10 或任一分類資料集。
+**資料**：CIFAR-10（老師提供的 `cifar10.npz`，在 Lab6 Colab 版裡用 `load_cifar10` 讀）或任一分類資料集。
 
 **繳交物**：Colab 截圖：自訂 Metric 的程式碼，以及訓練過程中該指標的輸出。
 
@@ -25,7 +25,8 @@
 
 ## 本週 Colab
 
-- [Lab6.ipynb — 進階技巧：Custom Layer／Loss／Metric／Callback](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab6.ipynb)　←　點開即用
+- [Lab6_colab_V1.ipynb — 進階技巧：Custom Layer／Loss／Metric／Callback（Colab 版，先上傳 cifar10.npz）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab6_colab_V1.ipynb)　←　點開即用
+- [Lab6.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab6.ipynb)　←　點開即用
 
 ## 註解：小考 1（CH00–CH06）；期中提案說明
 

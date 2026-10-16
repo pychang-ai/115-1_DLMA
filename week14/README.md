@@ -23,5 +23,7 @@
 
 ## 本週 Colab
 
-- [Lab9.ipynb — 遷移學習：cats_vs_dogs](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab9.ipynb)　←　點開即用
-- **Lab10（VAE）是資料夾專案，不能一鍵開啟**，請在 Colab 新筆記本第一格執行：`!git clone https://github.com/KUASWoodyLIN/TF2-VAE`，再依該資料夾的 README 執行。
+- [Lab9_colab_V1.ipynb — 遷移學習：cats_vs_dogs（Colab 版）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab9_colab_V1.ipynb)　←　點開即用
+- [Lab9.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab9.ipynb)　←　點開即用
+- [Lab10_colab_V1.ipynb — VAE（Colab 版，自動下載課本專案並修正）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab10_colab_V1.ipynb)　←　點開即用
+- Lab10 課本原版是資料夾專案 https://github.com/KUASWoodyLIN/TF2-VAE，在現在的 Colab 會出錯，上課請用上一行的 Colab 版。
