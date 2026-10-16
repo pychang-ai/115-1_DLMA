@@ -25,4 +25,4 @@
 ## 本週 Colab
 
 - [Lab3.ipynb — 二元分類：精靈寶可夢對戰預測](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab3.ipynb)　←　點開即用
-- [Lab4.ipynb — 多類別分類：CIFAR-10 與影像增強](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab4.ipynb)　←　點開即用
+- [Lab4.ipynb — 多類別分類：CIFAR-10 與影像增強]([https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab4.ipynb](https://colab.research.google.com/drive/1mR1FFSHXGPcZBGJ-jotKepbIiBBAt3UW?authuser=2#scrollTo=yMWg0bMaYfsp))　←　點開即用
