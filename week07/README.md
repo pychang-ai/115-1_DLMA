@@ -14,7 +14,7 @@
 
 ## 作業W07 學習單（1 題）
 
-**題目**：用 CIFAR-10 訓練兩個結構相同的 CNN，一個加 `BatchNormalization` 一個不加，各 **10 epochs**，比較兩者的驗證準確率與收斂速度。在 Lab5 Colab 版「Colab 準備」那一格**之後**加 `tf.random.set_seed(學號末兩碼)`（放在它前面會被擋下，要重新啟動）。
+**題目**：用 CIFAR-10 訓練兩個只差在 BN 的 CNN，各 **10 epochs**，比較兩者的驗證準確率與收斂速度。**有 BN**：Lab5 Colab 版實驗二的 `model_4`。**沒有 BN**：把建 `model_4` 那一格複製成新的一格，只刪掉 6 行 `x = layers.BatchNormalization()(x)`，模型名稱改成 `model_nobn`，其餘不動；用和 `model_4` 一樣的 `compile`，`fit` 時拿掉 callbacks，才不會蓋掉 `model_4` 的紀錄。不要拿實驗一的三個模型來比，它們和 `model_4` 除了 BN 還差在權重初始化方式，比出來的差距不全是 BN 造成的。在 Lab5 Colab 版「Colab 準備」那一格**之後**加 `tf.random.set_seed(學號末兩碼)`（放在它前面會被擋下，要重新啟動）。
 
 **資料**：老師提供下載的 `cifar10.npz`（和第 6 週同一個檔）。上傳到 Colab 預設資料夾 `/content`，再執行 Lab5 Colab 版，用裡面的 `load_cifar10` 讀資料。不要用 tfds 線上下載，原站太慢會卡住。
 

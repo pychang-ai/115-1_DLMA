@@ -13,7 +13,16 @@
 
 ## 作業W14 學習單（1 題）
 
-**題目**：用 `keras.applications` 載入 EfficientNetB0（ImageNet 預訓練權重），對你**自己拍或找的 3 張海事影像**（船、港口、燈塔等）做預測，各列出 Top-3 類別與信心值。
+**題目**：用 `keras.applications` 載入 EfficientNetB0（ImageNet 預訓練權重），對你**自己拍或找的 3 張海事影像**（船、港口、燈塔等）做預測，各列出 Top-3 類別與信心值。Lab8、Lab9 沒有 EfficientNetB0 的範例；照抄 Lab8 的 InceptionV3 會因輸入大小（299 對 224）和前處理不同而出錯或結果失真。請用下面這段，新開一個 Colab 筆記本或接在 Lab9 Colab 版後面都可以，`ship1.jpg` 換成你上傳的檔名，每張照片跑一次：
+
+```python
+import numpy as np, tensorflow as tf
+from tensorflow.keras.applications.efficientnet import EfficientNetB0, preprocess_input, decode_predictions
+model = EfficientNetB0(weights='imagenet')  # 輸入 224×224
+img = tf.keras.utils.load_img('ship1.jpg', target_size=(224, 224))
+x = preprocess_input(np.expand_dims(tf.keras.utils.img_to_array(img), 0))
+print(decode_predictions(model.predict(x), top=3)[0])
+```
 
 **資料**：自備 3 張海事影像（自行拍攝或公開圖片，需註明來源）。
 

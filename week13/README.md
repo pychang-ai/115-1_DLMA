@@ -14,7 +14,7 @@
 
 ## 作業W13 學習單（1 題）
 
-**題目**：用 TensorBoard 的 HParams 工具跑 **12 組**超參數組合（例如 units × dropout × optimizer），每組只訓練 **3 epochs**，在 HParams 面板比較，指出最佳組合。
+**題目**：用 Lab7 Colab 版實驗二的 HParams 工具跑 **12 組**超參數組合，每組訓練 **3 epochs**。做法：學習率固定為 0.001，把 `hparam_lr` 那一行改成 `hp.HParam('Learning_Rate', hp.Discrete([0.001]))`，剩下影像增強 2 種 × BN 2 種 × 初始化 3 種＝12 組；再把 `train_test_model` 裡兩處 `epochs=2` 改成 `epochs=3`。如果已經跑過課本原本的 36 組，先執行 `!rm -rf lab7-logs-hparams` 清掉舊紀錄，面板才會剛好 12 列。跑完在 HParams 面板比較，指出最佳組合。
 
 **資料**：CIFAR-10（老師提供的 `cifar10.npz`，在 Lab7 Colab 版裡用 `load_cifar10` 讀）或課本範例資料集。
 

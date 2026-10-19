@@ -15,13 +15,13 @@
 
 ## 作業W08 學習單（1 題）
 
-**題目**：繼承 `tf.keras.metrics.Metric` 寫一個自訂指標 `CategoricalTruePositives`（計算正確分類的樣本數），加進 `model.compile(metrics=[...])`，訓練 3 epochs 讓它每個 epoch 都印出來。
+**題目**：繼承 `tf.keras.metrics.Metric` 寫一個自訂指標 `CategoricalTruePositives`（計算正確分類的樣本數），加進 `model.compile(metrics=[...])`，訓練 3 epochs 讓它每個 epoch 都印出來。Lab6 的標籤是 one-hot 編碼：`update_state` 裡要先用 `tf.argmax(..., axis=-1)` 把 `y_true` 和 `y_pred` 都轉成類別編號再比較，寫法可參考 Lab6 的 `CustomCategoricalAccuracy`。網路上同名的官方範例假設標籤是整數，照抄會算錯：1,000 筆資料實際答對 108 筆，它算成 751 筆。
 
 **資料**：CIFAR-10（老師提供的 `cifar10.npz`，在 Lab6 Colab 版裡用 `load_cifar10` 讀）或任一分類資料集。
 
 **繳交物**：Colab 截圖：自訂 Metric 的程式碼，以及訓練過程中該指標的輸出。
 
-**評分要點（Pass／Fail）**：有繼承 Metric 並實作 update_state／result；訓練記錄看得到該指標數值。
+**評分要點（Pass／Fail）**：有繼承 Metric 並實作 update_state／result；訓練記錄看得到該指標數值；數值約等於同一個 epoch 的準確率乘以訓練筆數。
 
 ## 本週 Colab
 

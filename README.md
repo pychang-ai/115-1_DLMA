@@ -268,6 +268,7 @@
 | **LLM 推論最佳化** | 訓練好的模型要怎麼跑得快、跑得起：兩階段推論、KV cache、批次策略、MHA/GQA/MQA、量化、推測解碼、平行化。七個手算例＋三支 NumPy 手寫程式 | [講義](topics/llm-inference/115-1_課外主題_LLM推論最佳化.md)｜[PDF](topics/llm-inference/115-1_課外主題_LLM推論最佳化.pdf)｜[簡報](topics/llm-inference/課外主題_LLM推論最佳化.pptx) |
 | **梯度下降法** | 補充教材《深度學習 2023_0601_R2》第 30 至 39 頁的程式版：更新式、手算六步、學習率太大為什麼發散、等高線與鋸齒。手寫 NumPy 版與 TensorFlow 2 框架版跑同一題，數字必須一致 | [講義](topics/gradient-descent/115-1_課外主題_梯度下降法.md)｜[PDF](topics/gradient-descent/115-1_課外主題_梯度下降法.pdf)｜[簡報](topics/gradient-descent/課外主題_梯度下降法.pptx)｜[程式](topics/gradient-descent/gradient_descent.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/gradient-descent/gradient_descent.ipynb) |
 | **倒傳遞演算法** | 從梯度下降講起，到梯度怎麼讓電腦自己算：數值微分、計算圖、兩條節點規則、梯度確認（含故意寫錯一次），兩層網路上數值微分與倒傳遞比速度。一本講義讀完，不必先讀其他教材 | [講義](topics/backprop/115-1_課外主題_倒傳遞演算法.md)｜[PDF](topics/backprop/115-1_課外主題_倒傳遞演算法.pdf)｜[簡報](topics/backprop/課外主題_倒傳遞演算法.pptx)｜[程式](topics/backprop/backprop.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/backprop/backprop.ipynb) |
+| **RAG 檢索增強生成** | 讓 LLM 根據你手上的文件回答：切塊、句向量嵌入、scikit-learn 最近鄰檢索、Qwen2.5-0.5B 生成，不用付費 API。附「不檢索直接問」對照、文件裡沒有的問題、用中文問英文文件 | [程式](topics/rag/rag_pipeline.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/rag/rag_pipeline.ipynb) |
 
 ## 注意事項
 
