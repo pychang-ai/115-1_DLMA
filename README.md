@@ -317,6 +317,10 @@
 6. 請務必通知父母或監護人，勿偽造 LINE 訊息。
 
 
+LINE 請假範例畫面（個資已遮蔽）：
+
+![LINE 請假範例](images/leave_example.png)
+
 ## GitHub 基本操作（新手看這裡）
 
 > 每週作業以 Canva 答題卡繳交；課本範例 repo 與你的專案程式建議用 Git 管理，期末報告需附專案 repo 或 Colab 連結。
