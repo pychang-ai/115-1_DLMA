@@ -45,6 +45,12 @@ Section 5 repeats the preliminary experiments on MNIST using the notebook that a
 | cross entropy with the soft targets and with the hard targets | $C_{soft}$, $C_{hard}$ |
 | weight of the soft-target objective | $\alpha$ |
 | number of classes | $N$ |
+| softmax: the function that converts logits into class probabilities that sum to 1 | — |
+| regularization: methods that constrain a model during training so that it does not fit the training data too closely (overfitting), e.g. dropout or weight constraints | — |
+| dropout: a regularizer that randomly drops a fraction of the units on each training case; it can be viewed as training a very large ensemble of models that share weights | — |
+| generalization: the ability of a model to give correct outputs on new data that it has not seen | — |
+
+We keep the terms of the paper throughout, for easy comparison with the original. In the later literature, the cumbersome model is commonly called the *teacher model* and the distilled model the *student model*. The earliest explicit definition of these names that we found is in Li, Zhao, Huang, and Gong (Interspeech 2014): "we sometimes call the large-size DNN as the teacher DNN, and the small-size DNN as the student DNN" [4].
 
 # 1 Introduction
 
@@ -323,8 +329,8 @@ The notebook repeats the three results above. To finish within a few minutes on 
 
 ![MNIST training cases](kdfigs_en/f_digits.png)
 
-The results below were obtained on 19 October 2026 by running the notebook on a CPU (Python 3.13, TensorFlow 2.21, Keras 3.13).
-Running it on Colab, or changing the code even slightly, gives somewhat different numbers, because the random seeds that TensorFlow assigns change; the three effects remain.
+The results below were obtained on 22 October 2026 by running the notebook on a CPU (Python 3.13, TensorFlow 2.21, Keras 3.13).
+Different runs of the same notebook can give different numbers of test errors (we observed 203 and 222 for the cumbersome model), but the three effects remain.
 
 ## 5.3 Distillation gives fewer test errors
 
@@ -735,3 +741,4 @@ plt.show()
 1. G. Hinton, O. Vinyals, J. Dean, "Distilling the Knowledge in a Neural Network," arXiv:1503.02531, 2015.
 2. C. Buciluǎ, R. Caruana, A. Niculescu-Mizil, "Model compression," in *Proc. 12th ACM SIGKDD*, 2006, pp. 535–541.
 3. Y. LeCun, C. Cortes, C. J. C. Burges, The MNIST database of handwritten digits.
+4. J. Li, R. Zhao, J.-T. Huang, Y. Gong, "Learning small-size DNN with output-distribution-based criteria," in *Proc. Interspeech*, 2014, pp. 1910–1914.
