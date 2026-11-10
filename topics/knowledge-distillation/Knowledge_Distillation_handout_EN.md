@@ -30,7 +30,7 @@ Section 5 repeats the preliminary experiments on MNIST using the notebook that a
 | 5 | Preliminary experiments on MNIST | run the notebook once |
 | 6 | Other results of the paper | — |
 | 7 | The notebook | — |
-| 8 | Exercises and answers | three exercises |
+| 8 | Exercises and answers | four exercises |
 
 ## Notation
 
@@ -97,6 +97,22 @@ However, it has very little influence on the cross-entropy cost function during 
 Caruana and his collaborators circumvent this problem by using the logits, the inputs to the final softmax, rather than the probabilities as the targets, and minimizing the squared difference between the logits of the cumbersome model and those of the small model.
 The more general solution of the paper is to raise the temperature of the final softmax until the cumbersome model produces a suitably soft set of targets, and to use the same high temperature when training the small model to match them.
 We show in Section 4.4 that matching the logits is a special case of distillation.
+
+## 1.4 The author's recollection
+
+In an interview in October 2026, Hinton, the first author of the paper, recalled where the idea of distillation came from [5]. His account agrees with this section:
+
+1. Training a small model to match the outputs of a large model had been proposed by Caruana and his collaborators in 2006, the approach described in Section 1.3, but few people noticed it at the time, Hinton included.
+2. When he later thought about large models, he thought about insects. Most insects have a larval stage, such as a caterpillar, and an adult stage, such as a butterfly. The larval stage is good at extracting nutrients from the environment; it just eats. The adult stage is good at traveling and mating.
+3. In machine learning, the best model for extracting information from data is a big model with a huge number of connections, but serving a billion people requires a much smaller model. Distillation is how the information gets from the big model to the small model.
+
+| Insect | Machine learning | Term in this handout |
+|---|---|---|
+| larva: extracts nutrients | training: extracts structure from the data | cumbersome model |
+| adult: travels and reproduces | deployment: serves many users at once | distilled model |
+| metamorphosis | transferring the knowledge to a small model | distillation |
+
+Eleven years after the paper, the author still explains distillation with the same analogy, which marks it as the central idea: training and deployment have different requirements, so they should use different models.
 
 # 2 Softmax with a Temperature and Soft Targets
 
@@ -438,6 +454,8 @@ On a CPU the whole notebook takes a few minutes; a GPU ("Runtime → Change runt
 
 **Exercise 3.** In Section 7 of the notebook, omit the digit 7 instead of the digit 3. Record the fraction of test 7s that are correct, before and after the bias for 7 is increased.
 
+**Exercise 4.** Following Section 1.4, why not deploy the cumbersome model itself when serving a billion people? Answer with two rows of the table in Section 1.1.
+
 **Answer 1.** $v/2 = (4, 2, 0)$; the exponentials are $(54.5982, 7.3891, 1.0000)$, which sum to 62.9873; the soft targets are $p = (0.8668, 0.1173, 0.0159)$.
 The distribution is softer than at $T = 1$ and less soft than at $T = 4$.
 
@@ -445,6 +463,8 @@ The distribution is softer than at $T = 1$ and less soft than at $T = 4$.
 The total gradient comes from the hard targets alone: $0.1 \times (q^{(T=1)} - y) = 0.1 \times (0.9817 - 1,\ 0.0180,\ 0.0003) = (-0.0018, 0.0018, 0.0000)$.
 
 **Answer 3.** The result varies from run to run and has no fixed answer. Record the number of test errors, the number of errors on 7s, and the increase in the bias.
+
+**Answer 4.** Use the rows Time and Computation. Deployment has stringent requirements on latency and limited computational resources, whereas the cumbersome model needs a huge amount of computation, so it would be too slow and too costly. We therefore let the large model extract the structure from the data and then distill it into a small model for deployment.
 
 
 # Appendix: The Complete Notebook
@@ -742,3 +762,4 @@ plt.show()
 2. C. Buciluǎ, R. Caruana, A. Niculescu-Mizil, "Model compression," in *Proc. 12th ACM SIGKDD*, 2006, pp. 535–541.
 3. Y. LeCun, C. Cortes, C. J. C. Burges, The MNIST database of handwritten digits.
 4. J. Li, R. Zhao, J.-T. Huang, Y. Gong, "Learning small-size DNN with output-distribution-based criteria," in *Proc. Interspeech*, 2014, pp. 1910–1914.
+5. G. Hinton, interview, October 2026, 08:29–10:32. Video: YouTube channel "AI 101," https://www.youtube.com/watch?v=4IUvlEFoDK8.
