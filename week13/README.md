@@ -24,7 +24,8 @@
 
 ## 本週 Colab
 
-- [Lab7_colab_V1.ipynb — TensorBoard 進階：tf.summary 與 HParams（Colab 版，先上傳 cifar10.npz）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7_colab_V1.ipynb)　←　點開即用
+- [Lab7_colab_V2.ipynb — TensorBoard 進階：tf.summary 與 HParams（Colab 版，先上傳 cifar10.npz；7.1 與實驗一結尾請照說明自己新增一格開 TensorBoard）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7_colab_V2.ipynb)　←　點開即用
+- [Lab7_colab_V1.ipynb — 舊版，沒有開 TensorBoard 的說明](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7_colab_V1.ipynb)
 - [Lab7.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab7.ipynb)　←　點開即用
 - [Lab8_colab_V1.ipynb — 經典架構：InceptionV3（Colab 版）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab8_colab_V1.ipynb)　←　點開即用
 - [Lab8.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab8.ipynb)　←　點開即用
