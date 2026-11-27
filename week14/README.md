@@ -35,5 +35,6 @@ print(decode_predictions(model.predict(x), top=3)[0])
 - [Lab9_colab_V2.ipynb — 遷移學習：cats_vs_dogs（Colab 版）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab9_colab_V2.ipynb)　←　點開即用
 - [Lab9_colab_V1.ipynb — 舊版，載入 cats_vs_dogs 那一格會出現 No module named importlib_resources](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab9_colab_V1.ipynb)
 - [Lab9.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab9.ipynb)　←　點開即用
-- [Lab10_colab_V1.ipynb — VAE（Colab 版，自動下載課本專案並修正）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab10_colab_V1.ipynb)　←　點開即用
+- [Lab10_colab_V2.ipynb — VAE（Colab 版，自動下載課本專案並修正）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab10_colab_V2.ipynb)　←　點開即用
+- [Lab10_colab_V1.ipynb — 舊版，訓練那一格會出現 No module named importlib_resources](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab10_colab_V1.ipynb)
 - Lab10 課本原版是資料夾專案 https://github.com/KUASWoodyLIN/TF2-VAE，在現在的 Colab 會出錯，上課請用上一行的 Colab 版。
