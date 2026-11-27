@@ -8,11 +8,11 @@
 | 教科書 | 黃士嘉、林邑撰《輕鬆學會 Google TensorFlow 2：人工智慧深度學習實作開發（第三版）》博碩 2021；範例 <https://github.com/pychang-ai/MMSLAB-TF2> |
 | 工具 | Google Colab（免費 GPU）、VS Code、Anaconda、Git |
 | 上課方式 | 第 1–2 節講授與實作示範；**第 3 節自由練習**：完成當週 1 題作業，老師巡堂答問 |
-| 評分 | 平時作業 20%、小考 20%（2 次）、出席與課堂參與 20%、期中提案報告 20%、期末結案報告 20%（草案，以課程簡介為準） |
+| 評分 | 平時作業 20%、小考 20%（2 次）、出席與課堂參與 20%、期中考 20%、期末結案報告 20%（草案，以課程簡介為準） |
 | 作業繳交 | 每週 1 題，當堂完成：到當週 Canva 答題卡中**自己學號末兩碼**的卡片，貼程式碼與執行結果截圖，下課前完成。**末兩碼不在 01–50 者用備用卡** |
 | 本週 Colab | 每一個有作業的週次，資料夾裡都附了當週課本範例的 Colab 直開連結；第 7 週起的 Lab 都有 Colab 版（檔名 `_colab_V1`），Lab12 是資料夾專案，該週會寫明 clone 指令 |
 | 個人化規則 | 所有訓練程式開頭加 `tf.random.set_seed(學號末兩碼)`，**截圖要看得到這一行**；用 Colab 版時放在「Colab 準備」那一格之後 |
-| 專案 | 碩士課程 1 人 1 專案：W9 期中提案報告、W18 期末結案報告（繳 WORD＋PPT 並上台） |
+| 專案 | 碩士課程 1 人 1 專案：W18 期末結案報告（繳 WORD＋PPT 並上台） |
 
 ## 術語速查
 
@@ -219,8 +219,8 @@
 | 第 5 週 | 2026/10/09 | 休假（國慶日補假） | — | 休假（國慶日補假） |
 | 第 6 週 | 2026/10/16 | 分類問題：二元與多類別 | [作業W06](week06/README.md) 用 CIFAR-10 訓練一個 CNN（10 epochs），與課本全連接版的準確率比較 | — |
 | 第 7 週 | 2026/10/23 | 神經網路訓練技巧 | [作業W07](week07/README.md) 用 CIFAR-10 比較「有 BN」與「沒有 BN」兩個模型的驗證準確率（各 10 epochs） | — |
-| 第 8 週 | 2026/10/30 | TensorFlow 進階技巧 | [作業W08](week08/README.md) 自訂一個 Metric（計算正確分類樣本數），加進訓練並截圖它每個 epoch 的輸出 | 小考 1（CH00–CH06）；期中提案說明 |
-| 第 9 週 | 2026/11/06 | 期中提案報告 | — | 期中提案報告 |
+| 第 8 週 | 2026/10/30 | TensorFlow 進階技巧 | [作業W08](week08/README.md) 自訂一個 Metric（計算正確分類樣本數），加進訓練並截圖它每個 epoch 的輸出 | 小考 1（CH00–CH06）；期中考說明 |
+| 第 9 週 | 2026/11/06 | 期中考（線上選擇題） | — | 期中考（線上選擇題） |
 | 第 10 週 | 2026/11/13 | 業界專家協同教學（主題一）<br><sub>**碩專 3203**：（主題待公布）</sub> | — | 協同教學（不出作業） |
 | 第 11 週 | 2026/11/20 | 業界專家協同教學（主題二）<br><sub>**碩專 3203**：（主題待公布）</sub> | — | 協同教學（不出作業） |
 | 第 12 週 | 2026/11/27 | 業界專家協同教學（主題三）<br><sub>**碩專 3203**：（主題待公布）</sub> | — | 協同教學（不出作業） |
@@ -239,7 +239,7 @@
 | 第 11 週 | 2026/11/20 | 業界專家協同教學 | （主題待公布） |
 | 第 12 週 | 2026/11/27 | 業界專家協同教學 | （主題待公布） |
 
-碩專 3203 未聘業界專家，這三週由授課教師另開三個 AI 前沿專題，一樣**每週 1 題隨堂作業**，故碩專全學期作業為 12 份。**其餘 15 週兩班完全相同**，教科書章節、小考範圍與日期、期中提案與期末結案報告都不因班別而異。
+碩專 3203 未聘業界專家，這三週由授課教師另開三個 AI 前沿專題，一樣**每週 1 題隨堂作業**，故碩專全學期作業為 12 份。**其餘 15 週兩班完全相同**，教科書章節、小考範圍與日期、期中考與期末結案報告都不因班別而異。
 
 ## 教科書章節與週次對應
 
@@ -271,6 +271,7 @@
 | **RAG 檢索增強生成** | 讓 LLM 根據你手上的文件回答：切塊、句向量嵌入、scikit-learn 最近鄰檢索、Qwen2.5-0.5B 生成，不用付費 API。附「不檢索直接問」對照、文件裡沒有的問題、用中文問英文文件 | [程式](topics/rag/rag_pipeline.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/rag/rag_pipeline.ipynb) |
 | **知識蒸餾 Knowledge Distillation** | 把大模型的知識移轉給小模型：溫度軟化的 softmax、軟目標、蒸餾損失與梯度，一張手寫 2 的逐步手算；Colab 重做論文的 MNIST 實驗，含「學生從沒看過 3」。資料檔 kd_mnist.npz 可拖進 Colab，或由程式自動從本 repo 下載 | [講義](topics/knowledge-distillation/115-1_課外主題_知識蒸餾.md)｜[PDF](topics/knowledge-distillation/115-1_課外主題_知識蒸餾.pdf)｜[簡報](topics/knowledge-distillation/課外主題_知識蒸餾.pptx)｜[程式](topics/knowledge-distillation/knowledge_distillation.ipynb)｜[資料](topics/knowledge-distillation/kd_mnist.npz)｜[講義（英文）](topics/knowledge-distillation/Knowledge_Distillation_handout_EN.md)｜[PDF（英文）](topics/knowledge-distillation/Knowledge_Distillation_handout_EN.pdf)｜[簡報（英文）](topics/knowledge-distillation/Knowledge_Distillation_slides_EN.pptx)｜[程式（英文）](topics/knowledge-distillation/knowledge_distillation_en.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/knowledge-distillation/knowledge_distillation.ipynb) |
 | **客製化 API Custom Layer、Loss、Metric、Callback** | 課本第 6 章 TensorFlow 2 進階技巧的程式版：四個客製化元件各用簡報的手算例核對，再用 CIFAR-10 比較 Keras 高階 API 與客製化 API 兩個模型。沒有 cifar10.npz 時，程式自動下載本 repo 的縮小版 cifar10_subset.npz | [簡報](topics/custom-api/week08_2026_1030_TensorFlow進階技巧_V2.pptx)｜[程式](topics/custom-api/custom_api.ipynb)｜[資料](topics/custom-api/cifar10_subset.npz)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/custom-api/custom_api.ipynb) |
+| **LSTM 與 RNN** | 同一份 1949–1960 年每月航空旅客資料、同一個網路結構，只換循環層，比較 SimpleRNN、GRU、LSTM 的預測誤差，並和「直接用 12 個月前的值」的季節性基準比較。Colab 內建環境即可執行，CPU 約 1 至 3 分鐘，資料由程式自動下載 | [資料](topics/lstm-rnn/airline-passengers.csv)｜[程式](topics/lstm-rnn/lstm_rnn_V1.ipynb)｜[在 Colab 開啟](https://colab.research.google.com/github/pychang-ai/115-1_DLMA/blob/main/topics/lstm-rnn/lstm_rnn_V1.ipynb) |
 
 ## 注意事項
 

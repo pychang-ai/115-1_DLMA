@@ -5,7 +5,7 @@
   - 6-1 Custom Layers／Loss／Metrics／Callbacks
   - 6-2 Keras 高階 API 與客製化 API 比較
   - 6-3 實驗：兩種寫法的訓練結果比較
-  - 期中提案報告說明
+  - 期中考說明
 
 ## 隨堂作業
 
@@ -28,6 +28,6 @@
 - [Lab6_colab_V1.ipynb — 進階技巧：Custom Layer／Loss／Metric／Callback（Colab 版，先上傳 cifar10.npz）](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab6_colab_V1.ipynb)　←　點開即用
 - [Lab6.ipynb — 課本原版：在現在的 Colab 會出錯，上課請用上一行的 Colab 版](https://colab.research.google.com/github/pychang-ai/MMSLAB-TF2/blob/master/Lab6.ipynb)　←　點開即用
 
-## 註解：小考 1（CH00–CH06）；期中提案說明
+## 註解：小考 1（CH00–CH06）；期中考說明
 
 見 [quizzes/README.md](../quizzes/README.md)。
